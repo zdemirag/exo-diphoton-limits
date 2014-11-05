@@ -1,0 +1,406 @@
+
+[1mRooFit v3.55 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2012 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+calculate some limits ...
+prepare with : run_channel_dielectron_ebee
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto003Pdf is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto004Pdf is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto008Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto005Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto000Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto001Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto002Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto009Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto010Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto011Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto006Func is available
+Warning in <TClass::TClass>: no dictionary for class RooCFAuto007Func is available
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() reusing code export directory .wscode.ae280aac-da8a-11e3-9717-e6d28a89beef.myWS to extract coded embedded in workspace
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto000Func to define class RooCFAuto000Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto001Func to define class RooCFAuto001Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto002Func to define class RooCFAuto002Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto003Pdf to define class RooCFAuto003Pdf
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto004Pdf to define class RooCFAuto004Pdf
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto005Func to define class RooCFAuto005Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto006Func to define class RooCFAuto006Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto007Func to define class RooCFAuto007Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto008Func to define class RooCFAuto008Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto009Func to define class RooCFAuto009Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto010Func to define class RooCFAuto010Func
+[#1] INFO:ObjectHandling -- RooWorkspace::CodeRepo::compileClasses() Compiling code unit RooCFAuto011Func to define class RooCFAuto011Func
+workspacename: myWSModelConfigurator - constructed
+ModelConfigurator - Zprime - Setup() - 
+ModelConfigurator - Zprime - Setup_channel() - dielectron_ebee - begin ...
+-#-#-#-#-#-#-#-#-
+RooArgSet:: = (mass,peak,width_p0,width_p1,res_a,res_b,res_c,a,b,c,d,eff_scale,eff_a,eff_b,ratio,lumi,nbkg_est,nz,nsig_scale,nsig_kappa,nbkg_kappa,nbkg_kappa_b,nbkg_kappa_m,nbkg_kappa_msquared,mass_kappa,glob_nsig,glob_nbkg,glob_mass,beta_nsig,beta_nbkg,beta_mass,weight)
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable mass is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable peak is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable width_p0 is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable width_p1 is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable res_a is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable res_b is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable res_c is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable a is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable b is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable c is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable d is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable eff_scale is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable eff_a is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable eff_b is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable ratio is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable lumi is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nbkg_est is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nz is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nsig_scale is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nsig_kappa is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nbkg_kappa is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nbkg_kappa_b is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nbkg_kappa_m is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable nbkg_kappa_msquared is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable mass_kappa is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable glob_nsig is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable glob_nbkg is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable glob_mass is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable beta_nsig is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable beta_nbkg is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable beta_mass is shared
+ModelConfigurator - Setup_channel() - dielectron_ebeechecking if variable weight is shared
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  model to model_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  model_core to model_core_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  sigpdf to sigpdf_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  mass_scaled to mass_scaled_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  mass_nuis to mass_nuis_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  width to width_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  width_2 to width_2_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  sigma to sigma_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  sigma_rel to sigma_rel_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  nsig to nsig_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  eff to eff_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  nsig_nuis to nsig_nuis_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  bkgpdf to bkgpdf_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  nbkg to nbkg_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  nbkg_nuis to nbkg_nuis_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  syst_nsig to syst_nsig_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  syst_nbkg to syst_nbkg_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Resolving name conflict in workspace by changing name of imported node  syst_mass to syst_mass_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable mass_kappa to mass_kappa_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable beta_mass to beta_mass_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable res_a to res_a_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable res_b to res_b_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable res_c to res_c_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable nsig_scale to nsig_scale_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable nz to nz_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable eff_a to eff_a_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable eff_b to eff_b_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable nsig_kappa to nsig_kappa_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable beta_nsig to beta_nsig_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable a to a_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable b to b_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable c to c_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable d to d_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable nbkg_est to nbkg_est_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable nbkg_kappa_b to nbkg_kappa_b_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable nbkg_kappa_m to nbkg_kappa_m_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable nbkg_kappa_msquared to nbkg_kappa_msquared_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable beta_nbkg to beta_nbkg_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable glob_nsig to glob_nsig_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable glob_nbkg to glob_nbkg_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) Changing name of variable glob_mass to glob_mass_dielectron_ebee on request
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooProdPdf::model_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooAddPdf::model_core_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooVoigtian::sigpdf_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooProduct::mass_scaled_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::mass
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooCFAuto008Func::mass_nuis_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::mass_kappa_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::beta_mass_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::peak
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooAddition::width_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::width_p0
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooProduct::width_2_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::width_p1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooProduct::sigma_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooCFAuto009Func::sigma_rel_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::res_a_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::res_b_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::res_c_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooProduct::nsig_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::nsig_scale_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::ratio
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::nz_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooCFAuto000Func::eff_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::eff_a_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::eff_b_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooCFAuto005Func::nsig_nuis_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::nsig_kappa_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::beta_nsig_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooCFAuto003Pdf::bkgpdf_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::a_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::b_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::c_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::d_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooProduct::nbkg_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::nbkg_est_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooCFAuto006Func::nbkg_nuis_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::nbkg_kappa_b_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::nbkg_kappa_m_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::nbkg_kappa_msquared_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::beta_nbkg_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooGaussian::syst_nsig_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooConstVar::1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::glob_nsig_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooGaussian::syst_nbkg_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::glob_nbkg_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooGaussian::syst_mass_dielectron_ebee
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooRealVar::glob_mass_dielectron_ebee
+ModelConfigurator - Zprime - Setup_channel() - dielectron_ebee - end ...
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) importing RooCategory::channels
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooProdPdf::model_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooAddPdf::model_core_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooVoigtian::sigpdf_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooProduct::mass_scaled_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::mass for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooCFAuto008Func::mass_nuis_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::mass_kappa_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::beta_mass_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::peak for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooAddition::width_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::width_p0 for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooProduct::width_2_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::width_p1 for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooProduct::sigma_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooCFAuto009Func::sigma_rel_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::res_a_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::res_b_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::res_c_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooProduct::nsig_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::nsig_scale_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::ratio for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::nz_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooCFAuto000Func::eff_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::eff_a_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::eff_b_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooCFAuto005Func::nsig_nuis_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::nsig_kappa_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::beta_nsig_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooCFAuto003Pdf::bkgpdf_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::a_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::b_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::c_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::d_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooProduct::nbkg_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::nbkg_est_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooCFAuto006Func::nbkg_nuis_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::nbkg_kappa_b_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::nbkg_kappa_m_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::nbkg_kappa_msquared_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::beta_nbkg_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooGaussian::syst_nsig_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooConstVar::1 for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::glob_nsig_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooGaussian::syst_nbkg_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::glob_nbkg_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooGaussian::syst_mass_dielectron_ebee for import of RooSimultaneous::model
+[#1] INFO:ObjectHandling -- RooWorkspace::import(CombinedWS) using existing copy of RooRealVar::glob_mass_dielectron_ebee for import of RooSimultaneous::model
+ModelConfigurator - Zprime - Setup_ModelConfig() - 
+ModelConfigurator - Zprime - Setup_ModelConfig() -  add nuisance parameter: beta_nsig_dielectron_ebee
+ModelConfigurator - Zprime - Setup_ModelConfig() - nuisance parameter beta_nsig_dielectron_ebee has name beta_nsig_dielectron_ebee and title beta_nsig
+ModelConfigurator - Zprime - Setup_ModelConfig() -  add nuisance parameter: beta_nbkg_dielectron_ebee
+ModelConfigurator - Zprime - Setup_ModelConfig() - nuisance parameter beta_nbkg_dielectron_ebee has name beta_nbkg_dielectron_ebee and title beta_nbkg
+ModelConfigurator - Zprime - Setup_ModelConfig() -  add nuisance parameter: beta_mass_dielectron_ebee
+ModelConfigurator - Zprime - Setup_ModelConfig() - nuisance parameter beta_mass_dielectron_ebee has name beta_mass_dielectron_ebee and title beta_mass
+ModelConfigurator - Zprime - Setup_ModelConfig() -  add global observable: glob_nsig_dielectron_ebee
+ModelConfigurator - Zprime - Setup_ModelConfig() -  add global observable: glob_nbkg_dielectron_ebee
+ModelConfigurator - Zprime - Setup_ModelConfig() -  add global observable: glob_mass_dielectron_ebee
+ModelConfigurator - Zprime - Setup_ModelConfig() -  add observable: mass
+ModelConfigurator - Zprime - Setup_ModelConfig() - importing combined ModelConfigcombinedModelConfig into workspace
+ModelConfigurator - Zprime - Setup_ModelConfig() - setup for combined ModelConfigcombinedModelConfig complete
+ModelConfigurator - Zprime - setMassHypothesis(double peak) - adjusting Z' mass hypothesis from 1000 to 400
+thresh_min for data pruning is : 500
+DataPruner- ( double n_width, ModelConfiguratorZprime * configurator) constructed
+PixieSetResolution_ZPSI(ModelConfigurator * modelconfigurator, std::vector<std::string> channelnames) - adjust BW FWHM for Z_PSI 
+width_p0 is: 0.03765
+width_p1 is: 0.000128
+PixieSetResolution_ZPSI(ModelConfigurator * modelconfigurator, std::vector<std::string> channelnames) - set var width_p0 to: 
+0.375
+PixieSetResolution_ZPSI(ModelConfigurator * modelconfigurator, std::vector<std::string> channelnames) - set var width_p1 to: 
+0.01402
+Resultator -  constructed
+DataBox -  constructed
+PoiRangeEstimator -  constructed
+DataPruner- Prune( std::map<string, RooDataSet*> * Datamap)
+getting parameter: sigma_dielectron_ebee
+param1: 5.07643
+getting parameter: width_dielectron_ebee
+param2: 5.983
+minimum lower mass threshold is minimum of: 333.643 , 500
+minimum lower mass threshold is: 333.643
+DataPruner-  Prune(std::string channelname, double massThreshold) events in channel dielectron_ebee at address:0x6352088 before pruning: 2420
+DataPruner-  Prune(std::string channelname, double massThreshold) pruning channeldielectron_ebee with restriction mass>333.6434460645289 && mass<466.3565539354711
+DataPruner-  Prune(std::string channelname, double massThreshold) events in channel dielectron_ebee at address:0x6352088 after pruning: 1210
+[#1] INFO:Eval -- RooRealVar::setRange(mass) new range named 'pruned_range' created with bounds [333.643,466.357]
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass|pruned_range]_Norm[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+Integral value of bkgpdf_dielectron_ebee in pruned range: 0.488234
+ModelConfigurator - ModelConfigurator::setVar(std:::string name, double value) - WARNING: manually adjusting value of variable nbkg_est_dielectron_ebee from 2161.9 to 1055.51
+ModelConfigurator - ModelConfigurator::setVarRange(std::string name, double valuelow, double valuehigh) - WARNING: manually adjusting range of variable mass to 333.643 .. 466.357
+creating combined dataset ... 
+RooDataSet::combdata[channels,mass] = 1210 entries
+... created combined dataset 
+PoiRangeEstimator - GetPoiUpper(std::string channel, Double_t peak) - 
+PoiRangeEstimator - GetPoiUpperSimple(std::string channel, Double_t peak) - 
+PoiRangeEstimator - event yield in data in the window: 0.3
+PoiRangeEstimator - crude estimate for poi range: 0.00267557
+PoiRangeEstimator - this will be used if the profile likelihood ratio estimate fails
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+[#0] PROGRESS:Minization -- ProfileLikelihoodCalcultor::DoGlobalFit - using Minuit / Migrad with strategy 1
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_model_combdata_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state dielectron_ebee (1210 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (bkgpdf_dielectron_ebee)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigpdf_dielectron_ebee)
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- 
+  RooFitResult: minimized FCN value: -1585.27, estimated distance to minimum: 1.28181e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+  beta_mass_dielectron_ebee    0.0000e+00 +/-  9.93e-01
+  beta_nbkg_dielectron_ebee    8.8701e-01 +/-  1.91e-01
+  beta_nsig_dielectron_ebee   -1.7595e-03 +/-  9.93e-01
+                 ratio    5.7533e-08 +/-  5.72e-03
+
+estimate for reasonable upper limit of poi range: 0.029963
+Resultator - calculateMCMClimit( Int_t mcmc_iter, Int_t mcmc_burnin, Int_t nruns, std::string suffix, std::string mode) - 
+Resultator - calculateMCMClimit( Int_t mcmc_iter, Int_t mcmc_burnin, Int_t nruns, std::string suffix, std::string mode) - setting POI range to [0; 0.0449446]
+Resultator - calculateMCMClimit( Int_t mcmc_iter, Int_t mcmc_burnin, Int_t nruns, std::string suffix, std::string mode) - calculating an OBSERVED limit...
+Resultator - calculateMCMClimit( Int_t mcmc_iter, Int_t mcmc_burnin, Int_t nruns, std::string suffix, std::string mode) - For stability reasons we calculate it 2 times, so one can average. This is iteration 1 of 2
+creating combined dataset ... 
+RooDataSet::combdata[channels,mass] = 1210 entries
+... created combined dataset 
+PoiRangeEstimator -  constructed
+PoiRangeEstimator - GetPoiUpper(std::string channel, Double_t peak) - 
+PoiRangeEstimator - GetPoiUpperSimple(std::string channel, Double_t peak) - 
+PoiRangeEstimator - event yield in data in the window: 0.3
+PoiRangeEstimator - crude estimate for poi range: 0.00267557
+PoiRangeEstimator - this will be used if the profile likelihood ratio estimate fails
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+[#0] PROGRESS:Minization -- ProfileLikelihoodCalcultor::DoGlobalFit - using Minuit / Migrad with strategy 1
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_model_combdata_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state dielectron_ebee (1210 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (bkgpdf_dielectron_ebee)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigpdf_dielectron_ebee)
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- 
+  RooFitResult: minimized FCN value: -1585.27, estimated distance to minimum: 1.96838e-11
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+  beta_mass_dielectron_ebee    0.0000e+00 +/-  9.93e-01
+  beta_nbkg_dielectron_ebee    8.8695e-01 +/-  1.91e-01
+  beta_nsig_dielectron_ebee    6.0700e-07 +/-  9.93e-01
+                 ratio    2.2125e-14 +/-  5.69e-03
+
+estimate for reasonable upper limit of poi range after data generation: 0.0299626
+Resultator -  GetMcmcInterval(...) 
+test 1
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (prior,syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+Metropolis-Hastings progress: ....................................................................................................
+[#1] INFO:Eval -- Proposal acceptance rate: 22.428%
+[#1] INFO:Eval -- Number of steps in chain: 22428
+test 4
+Resultator - POI upper limit: 0.0117814
+Resultator - POI range: [0, 0.0449446]
+Resultator - POI upper gap (fraction of range): 0.737867
+Resultator - POI lower gap (fraction of range): 0.262133
+
+95% upper limit on ratio is : 0.0117814
+Resultator - calculateMCMClimit( Int_t mcmc_iter, Int_t mcmc_burnin, Int_t nruns, std::string suffix, std::string mode) - setting POI range to [0; 0.0449438]
+Resultator - calculateMCMClimit( Int_t mcmc_iter, Int_t mcmc_burnin, Int_t nruns, std::string suffix, std::string mode) - calculating an OBSERVED limit...
+Resultator - calculateMCMClimit( Int_t mcmc_iter, Int_t mcmc_burnin, Int_t nruns, std::string suffix, std::string mode) - For stability reasons we calculate it 2 times, so one can average. This is iteration 2 of 2
+creating combined dataset ... 
+RooDataSet::combdata[channels,mass] = 1210 entries
+... created combined dataset 
+PoiRangeEstimator -  constructed
+PoiRangeEstimator - GetPoiUpper(std::string channel, Double_t peak) - 
+PoiRangeEstimator - GetPoiUpperSimple(std::string channel, Double_t peak) - 
+PoiRangeEstimator - event yield in data in the window: 0.3
+PoiRangeEstimator - crude estimate for poi range: 0.00267557
+PoiRangeEstimator - this will be used if the profile likelihood ratio estimate fails
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+[#0] PROGRESS:Minization -- ProfileLikelihoodCalcultor::DoGlobalFit - using Minuit / Migrad with strategy 1
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+[#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_model_combdata_with_constr) Summation contains a RooNLLVar, using its error level
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state dielectron_ebee (1210 dataset entries)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (bkgpdf_dielectron_ebee)
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (sigpdf_dielectron_ebee)
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- 
+  RooFitResult: minimized FCN value: -1585.27, estimated distance to minimum: 1.47067e-07
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MINIMIZE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+  beta_mass_dielectron_ebee   -1.9116e-05 +/-  9.93e-01
+  beta_nbkg_dielectron_ebee    8.8696e-01 +/-  1.91e-01
+  beta_nsig_dielectron_ebee    2.3471e-05 +/-  9.93e-01
+                 ratio    8.5970e-10 +/-  5.69e-03
+
+estimate for reasonable upper limit of poi range after data generation: 0.0299626
+Resultator -  GetMcmcInterval(...) 
+test 1
+[#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(sigpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(bkgpdf_dielectron_ebee_Int[mass]) using numeric integrator RooAdaptiveGaussKronrodIntegrator1D to calculate Int(mass)
+[#1] INFO:Minization --  Including the following contraint terms in minimization: (prior,syst_nsig_dielectron_ebee,syst_nbkg_dielectron_ebee,syst_mass_dielectron_ebee)
+Metropolis-Hastings progress: ....................................................................................................
+[#1] INFO:Eval -- Proposal acceptance rate: 22.294%
+[#1] INFO:Eval -- Number of steps in chain: 22294
+test 4
+Resultator - POI upper limit: 0.0115035
+Resultator - POI range: [0, 0.0449438]
+Resultator - POI upper gap (fraction of range): 0.744047
+Resultator - POI lower gap (fraction of range): 0.255953
+
+95% upper limit on ratio is : 0.0115035
+Real time 0:33:24, CP time 1999.470
+.. calculated some limits

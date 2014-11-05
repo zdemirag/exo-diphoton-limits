@@ -1,0 +1,49 @@
+- make sure that categories can be defined
+
+- workdir for each process
+
+- add option for multiple ModelConfigs
+
+- integrate profileLL
+
+- integrate hybrid
+
+- integrate Feldman-Cousins
+
+- check/enforce fix/float consistency
+
+- add the fit action
+
+- add random names to temp HLFactory card files
+
+- load data from ASCII
+   - binned (hist)
+   + unbinned *DONE*
+
+- generate data from PDFs
+
+- why the names in the data section(?) case-insensitive?
+
+- add compilable custom RooAbsPdfs (without gROOT.ProcessLine)
+   idea: if an unknown PDF, check for the .cxx and .h files with the same name, compile and import if present
+
+- include external actions (from separate macros?)
+
+- check existance of the ModelConfig before accessing it
+
+- check existance of the Bayes calculator before accessing it
+
+- add RooFormulaVar support for RooDataSet weights from TTree (currently, just var)
+
+- add file name option for bayesian posterior plot
+
+- check that object is present in the input data file
+
+- add timing for actions
+
+- add PDF shape fitting
+
+- fix: TMath::Exp() screws up function's name when used with cexpr
+
+- use standard set interface from RooFactoryWSTool
+

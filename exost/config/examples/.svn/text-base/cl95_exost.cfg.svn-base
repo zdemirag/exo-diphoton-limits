@@ -1,0 +1,88 @@
+[Variables]
+
+# dummy observable - dilepton invariant mass
+mass       = [1000.0, 200, 2000]; 
+
+# parameter of interest (POI): cross section
+xsec = [0.5, 0.0, 1.0]; float;
+
+# lumi, cross section, efficiency
+ilum      = [36.1, 35.0, 40.0]; fix;
+slum      = [4.0, 0.0, 10.0]; fix;
+eff       = [0.30, 0.0, 1.0]; fix;
+seff      = [0.03, 0.0, 1.0]; fix;
+sig_scale = [1.0, 0.7, 1.3]; float;
+
+# background yield
+bck      = [5.0, 0.0, 10.0]; fix;
+sbck     = [1.0, 0.0, 10.0]; fix;
+bg_scale = [1.0, 0.7, 1.3]; float;
+
+# sets of observable, parameter of interest, nuisance parameters
+observables = set(mass);
+poi = set(xsec);
+nuisance_parameters = set(sig_scale, bg_scale);
+
+
+[Data]
+# The actual observable in this data file is the number of nonempty lines.
+# The number in each line does not matter because we specify Uniform
+# PDFs to describe both signal and background distributions.
+data = ascii(dummy, "Di-photon data", ../data/examples/counting_data_mass.ascii, observables)
+
+
+[Model]
+
+# background yield relative uncertainty + 1.0
+#  - this is the recommended way to handle uncertainty
+#    using Lognormal shape.
+#    Here 1.2 means 20% uncertainty.
+s_kappa = cexpr('1.0+sqrt(slum*slum/ilum/ilum + seff*seff/eff/eff)', slum, ilum, seff, eff);
+b_kappa = cexpr('1.0+sbck/bck', sbck, bck);
+
+# signal yield
+s                = prod(ilum, xsec, eff, sig_scale);
+
+# background yield
+b                = prod(bck, bg_scale);
+
+# core model PDF
+core_model       = SUM(s*Uniform(mass),b*Uniform(mass));
+
+# introduce uncertainty in signal yield
+sig_scale_prior    = Lognormal(sig_scale, 1.0, s_kappa);
+
+# introduce uncertainty in background yield
+bg_scale_prior   = Lognormal(bg_scale, 1.0, b_kappa);
+
+# full model
+model            = PROD(core_model, sig_scale_prior);
+
+# prior for the parameter of interest
+xsec_prior       = Uniform(xsec);
+
+# full prior
+# (not that not every systematic uncertainty is defined as prior)
+prior_pdf        = PROD(xsec_prior, bg_scale_prior);
+
+
+[Model Config]
+name                = counting_model_config
+model               = model
+poi                 = poi
+nuisance_parameters = nuisance_parameters
+prior               = prior_pdf
+
+
+[MCMC Calculator]
+action_name             = mcmc
+model_config            = counting_model_config
+data                    = data
+ph_cache_size           = 100
+confidence_level        = 0.95
+left_side_tail_fraction = 0.0
+burn_in_steps           = 100
+n_bins                  = 100
+number_of_iterations    = 10000
+make_posterior_plot     = True
+plot_format             = png

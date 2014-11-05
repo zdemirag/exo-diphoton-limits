@@ -1,0 +1,481 @@
+[Variables]
+
+#-------- the observable - dilepton invariant mass ----------------------
+mass       = [1000.0, 200, 2000];
+
+# energy scale factors
+f_es_mu    = [1.0, 0.9, 1.1];
+             fix;
+f_es_e     = [1.0, 0.9, 1.1];
+             float;
+# ES factors fractional uncertainties
+f_mass_mu  = [0.01];
+             fix;
+f_mass_e   = [0.01];
+             fix;
+
+#-------- parameters of interest: cross section, ratio ------------------
+#xsec = [0.0, 0.0, 1.0];
+#       float;
+ratio = [0.0, 0.0, 2.0];
+       float;
+
+
+
+#-------- lumi, 1/pb ----------------------------------------------------
+lumi_ee      = [35.3, 25.0, 45.0];
+               fix;
+lumi_mumu    = [39.96, 25.0, 55.0];
+               fix;
+
+
+#-------- efficiency and acceptance for mumu ----------------------------
+#
+# overall scale for eff*acc, apply systematics to this
+# ratio
+eff_scale_mumu = [1.0, 0.70, 1.30];
+                 float;
+
+# helper variables
+nz_mumu    = [13373.0];
+             fix;
+eff_z_mumu = [0.355];
+             fix;
+
+# AN-10-317 HEAD 22dec2010
+# also see Jordan Tucker's email
+eff_ssm_mumu_a  = [0.878];
+                  fix;
+eff_ssm_mumu_da = [0.002];
+                  fix;
+eff_ssm_mumu_b  = [-50.1];
+                  fix;
+eff_ssm_mumu_db = [1.9];
+                  fix;
+eff_ssm_mumu_c  = [22.8];
+                  fix;
+eff_ssm_mumu_dc = [3.9];
+                  fix;
+#
+#eff_psi_mumu_a  = [0.833];
+#                  fix;
+#eff_psi_mumu_da = [0.005];
+#                  fix;
+#eff_psi_mumu_b  = [-66.8];
+#                  fix;
+#eff_psi_mumu_db = [6.0];
+#                  fix;
+#eff_psi_mumu_c  = [67.2];
+#                  fix;
+#eff_psi_mumu_dc = [12.5];
+#                  fix;
+
+
+#-------- efficiency*acceptance for ee ----------------------------------
+#
+# overall scale for eff*acc, apply systematics to this
+eff_scale_ee  = [0.963, 0.5, 1.5];
+                float;
+# data/MC scale factor - mean value
+eff_scale0_ee = [0.963];
+                fix;
+
+# helper variables
+nz_ee      = [8731.0];
+             fix;
+eff_z_ee   = [0.260];
+             fix;
+
+#
+#---> Z' Psi
+eff_psi_ee_a  = [0.757];
+                fix;
+eff_psi_ee_da = [0.008];
+                fix;
+eff_psi_ee_b  = [-82.021];
+                fix;
+eff_psi_ee_db = [8.981];
+                fix;
+eff_psi_ee_c  = [81.125];
+                fix;
+eff_psi_ee_dc = [16.328];
+                fix;
+#
+#---> Z' SSM
+#eff_ssm_ee_a  = [0.740];
+#eff_ssm_ee_a  = [0.723];
+eff_ssm_ee_a  = [0.757];
+                fix;
+eff_ssm_ee_da = [0.006];
+                fix;
+#eff_ssm_ee_b  = [-48.386];
+#eff_ssm_ee_b  = [-55.391];
+eff_ssm_ee_b  = [-82.021];
+                fix;
+eff_ssm_ee_db = [5.512];
+                fix;
+#eff_ssm_ee_c  = [-4.303];
+#eff_ssm_ee_c  = [34.329];
+eff_ssm_ee_c  = [81.125];
+                fix;
+eff_ssm_ee_dc = [9.056];
+                fix;
+
+
+#--------> signal parameters --------------------------------------------
+#
+peak       = [250.0, 250, 1500];
+             fix;
+massshift  = [1.0, 0, 2];
+             fix;
+#g_psi_p0   = [-0.4603];
+#             fix;
+#g_psi_p1   = [0.0057951];
+#             fix;
+g_ssm_p0   = [-1.2979];
+             fix;
+g_ssm_p1   = [0.0309338];
+             fix;
+
+
+#--------> ee background parameters -------------------------------------
+#
+bckgslope  = [0.002223, 0.0, 1.0];
+             fix;
+bckgshape  = [3.814, 0.0, 10.0];
+             fix;
+
+
+#--------> mumu background parameters -----------------------------------
+#
+bkgsig     = [-6.68];
+             fix;
+kappa      = [0.207];
+             fix;
+a_mu       = [-0.00691235];
+             fix;
+b_mu       = [-2.404];
+             fix;
+
+
+#--------> mass resolution ----------------------------------------------
+#
+# overall resolution scale, apply systematics to this
+res_scale_ee   = [1.03, 0.50, 1.50];
+                 fix;
+res_scale_mumu = [1.00, 0.50, 1.50];
+                 fix;
+
+#res_ssm_p0_mumu   = [0.01582];	      
+#                    fix;
+#res_ssm_p1_mumu   = [0.00007316];    
+#                    fix;
+#res_ssm_p2_mumu   = [-0.00000001762];
+#                    fix;
+res_ssm_wm_p0_mumu = [0.0138];
+                     fix;
+res_ssm_wm_p1_mumu = [0.00009315];    
+                     fix;
+res_ssm_wm_p2_mumu = [-0.00000001077];
+                     fix;
+
+#
+#res_psi_c_ee  = [1.998, 1.9, 2.1];
+res_psi_c_ee  = [0.901];
+                fix;
+res_psi_dc_ee = [0.026];
+                fix;
+#res_psi_s_ee  = [0.0, -90.0, 90.0];
+res_psi_s_ee  = [17.238];
+                fix;
+res_psi_ds_ee = [28.138];
+                fix;
+#res_psi_n_ee  = [169.685, 155.0, 185.0];
+res_psi_n_ee  = [0.0];
+                fix;
+res_psi_dn_ee = [4.339];
+                fix;
+
+
+#n_bkg_ee   = [27.0, 0, 50];
+n_bkg_ee   = [23.5, 0, 50];
+             float;
+n_bkg_mumu  = [35.0, 0, 50];
+             float;
+sample     = [e, mu];
+
+weight     = [1.0];
+             fix;
+
+
+#--------> variables for defining parameter PDFs ----------------------------
+#
+# expected background yield
+n_bkg_ee0   = [23.5];
+              fix;
+n_bkg_mumu0  = [35.0];
+              fix;
+
+# fractional uncertainty for background yield
+f_n_bkg_ee  = [0.20];
+              fix;
+f_n_bkg_mumu = [0.20];
+              fix;
+
+# integrated luminosity
+lumi0_ee   = [35.3];
+             fix;
+lumi0_mumu = [39.96];
+             fix;
+
+# fractional uncertainty for the luminosity
+f_lumi     = [0.11];
+             fix;
+
+# eff*acc fractional uncertainty
+#f_eff_scale_ee   = [0.149];
+#f_eff_scale_ee   = [0.128];
+f_eff_scale_ee   = [0.08];
+                   fix;
+#f_eff_scale_mumu = [0.121];
+#f_eff_scale_mumu = [0.105];
+f_eff_scale_mumu = [0.031];
+                   fix;
+
+# resolution fractional uncertainty
+f_res_scale_ee   = [0.10];
+                   fix;
+f_res_scale_mumu = [0.10];
+                   fix;
+
+
+#--------> sets for Model Config ----------------------------------------
+#
+# parameters of interest
+#poi_set    = set(xsec);
+poi_set    = set(ratio);
+
+# nuisance parameters
+nuis_set    = set(n_bkg_ee, n_bkg_mumu, eff_scale_ee, eff_scale_mumu, f_es_e);
+nuis_set_e  = set(n_bkg_ee, eff_scale_ee, f_es_e);
+nuis_set_mu = set(n_bkg_mumu, eff_scale_mumu);
+#
+nuis_set_0   = set();
+nuis_set_1e  = set(n_bkg_ee);
+nuis_set_1mu = set(n_bkg_mumu);
+nuis_set_1   = set(n_bkg_ee, n_bkg_mumu);
+#
+# background, acceff (nominal)
+nuis_set_4   = set(n_bkg_ee, n_bkg_mumu, eff_scale_ee, eff_scale_mumu);
+nuis_set_4e  = set(n_bkg_ee, eff_scale_ee);
+nuis_set_4mu = set(n_bkg_mumu, eff_scale_mumu);
+#
+# background, acceff, energy scale
+nuis_set_3   = set(n_bkg_ee, n_bkg_mumu, eff_scale_ee, eff_scale_mumu, f_es_e, f_es_mu);
+nuis_set_3e  = set(n_bkg_ee, eff_scale_ee, f_es_e);
+nuis_set_3mu = set(n_bkg_mumu, eff_scale_mumu, f_es_mu);
+
+
+#------------------------------------------------------------------------
+[Data]
+
+#data_ee   = root(dataTree, 'Dielectron data',      ./heepMass9pbTree_sam.root, mass, weight);
+#data_ee   = root(dataTree, 'Dielectron data',      ./zprime_ee_sam_massHist15pb_25oct2010.root, mass, weight);
+#data_ee   = root(dataTree, 'Dielectron data',      ./massHist35pb.root, mass, weight);
+#data_ee   = root(dataTree, 'Dielectron data',      ./zprime_ee_sam_massHist35pb_12nov2010.root, mass, weight);
+data_ee   = root(dataTree, 'Dielectron data',      ./zprime_ee_vladlen_massHist35ForPreApproval_22nov2010.root, mass, weight);
+
+#data_mumu = root(muons,    'Dimuon data',     ./muonsData_5860InvNb.root, mass, weight);
+#data_mumu = root(muons,    'Dimuon data',     ./muons1090_nick.root, mass, weight);
+#data_mumu = root(muons,    'Dimuon data',     ./zprime_mumu_kypreos_out15_27oct2010v1.root, mass, weight);
+#data_mumu = root(dimuons,    'Dimuon data',     ./zpr_mumu_gena_35pb_08nov2010.root, mass, weight);
+data_mumu = root(dimuons,    'Dimuon data',     ./zpr_mumu_gena_40pb_20nov2010.root, mass, weight);
+
+combdata  = combine("Combined ee and mumu data", mass, sample, "e", data_ee, "mu", data_mumu);
+
+
+
+#------------------------------------------------------------------------
+[Model]
+
+#--------> Psi ------------------------------>
+#
+# efficiency*acceptance (Psi)
+#eff_ee   = cexpr('(eff_psi_ee_a+eff_psi_ee_b/(peak+eff_psi_ee_c))*eff_scale_ee', eff_psi_ee_a, eff_psi_ee_b, peak, eff_psi_ee_c, eff_scale_ee);
+#eff_mumu = cexpr('(eff_psi_mumu_a+eff_psi_mumu_b/(peak+eff_psi_mumu_c))*eff_scale_mumu', eff_psi_mumu_a, eff_psi_mumu_b, peak, eff_psi_mumu_c, eff_scale_mumu);
+#
+# signal width
+#sig_width = cexpr('g_psi_p0+g_psi_p1*peak', g_psi_p0, g_psi_p1, peak);
+#
+# mass resolution (Gaussian width), relative to the peak
+sigmaeral  = cexpr('res_scale_ee*0.01*sqrt(res_psi_s_ee*res_psi_s_ee/peak + res_psi_n_ee*res_psi_n_ee/peak/peak + res_psi_c_ee*res_psi_c_ee)', res_scale_ee, res_psi_s_ee, peak, res_psi_n_ee, res_psi_c_ee);
+
+
+#--------> SSM ------------------------------>
+#
+# efficiency*acceptance (SSM)
+eff_ee   = cexpr('(eff_ssm_ee_a+eff_ssm_ee_b/(peak+eff_ssm_ee_c))*eff_scale_ee', eff_ssm_ee_a, eff_ssm_ee_b, peak, eff_ssm_ee_c, eff_scale_ee);
+eff_mumu = cexpr('(eff_ssm_mumu_a+eff_ssm_mumu_b/(peak+eff_ssm_mumu_c))*eff_scale_mumu', eff_ssm_mumu_a, eff_ssm_mumu_b, peak, eff_ssm_mumu_c, eff_scale_mumu);
+#
+# gaussian resolution
+sig_width = cexpr('g_ssm_p0+g_ssm_p1*peak', g_ssm_p0, g_ssm_p1, peak);
+#
+# mass resolution (Gaussian width), relative to the peak
+#sigmamural = cexpr('res_scale_mumu*(res_ssm_p0_mumu + res_ssm_p1_mumu*peak + res_ssm_p2_mumu*peak*peak)', res_scale_mumu, res_ssm_p0_mumu, res_ssm_p1_mumu, peak, res_ssm_p2_mumu);
+sigmamural = cexpr('res_scale_mumu*(res_ssm_wm_p0_mumu + res_ssm_wm_p1_mumu*peak + res_ssm_wm_p2_mumu*peak*peak)', res_scale_mumu, res_ssm_wm_p0_mumu, res_ssm_wm_p1_mumu, peak, res_ssm_wm_p2_mumu);
+
+
+#-------- signal yield
+#norm_ee   = cexpr('xsec*lumi_ee*eff_ee', xsec, lumi_ee, eff_ee);
+#norm_mumu = cexpr('xsec*lumi_mumu*eff_mumu', xsec, lumi_mumu, eff_mumu);
+#
+norm_ee   = cexpr('0.001*ratio*nz_ee*eff_ee/eff_z_ee', ratio, nz_ee, eff_ee, eff_z_ee);
+norm_mumu = cexpr('0.001*ratio*nz_mumu*eff_mumu/eff_z_mumu', ratio, nz_mumu, eff_mumu, eff_z_mumu);
+
+
+#--------> Drell-Yan
+#
+# mass resolution (Gaussian width), relative to the peak
+#sigmamural = cexpr('res_scale_mumu*(res_dy_p0_mumu + res_dy_p1_mumu*peak + res_dy_p2_mumu*peak*peak)', res_scale_mumu, res_dy_p0_mumu, res_dy_p1_mumu, peak, res_dy_p2_mumu);
+
+
+#--------> The model proper ---------------------------------------------
+#
+# background shape for ee 
+# a = par1 = -bckgslope
+# b = par2 = -bckgshape
+bckg        = CEXPR('exp(-mass*bckgslope)/pow(mass,bckgshape)', mass, bckgslope, bckgshape);
+
+# background shape for ee 
+# old mumu
+#bckgmu      = CEXPR('exp(bkgsig*pow(mass, kappa))', bkgsig, mass, kappa);
+bckgmu      = CEXPR('exp(mass*a_mu)*pow(mass,b_mu)', mass, a_mu, b_mu);
+
+# relative shift between the ee and mumu peaks
+shiftedpeak = prod(peak, massshift);
+
+# absolute resolution
+sigmae      = prod(sigmaeral, peak);
+sigmamu     = prod(sigmamural, peak);
+
+# signal shape with resolution and energy scale
+mass_e    = prod(mass, f_es_e);
+k_mass_e  = cexpr('exp(f_mass_e)', f_mass_e);
+l_mass_e  = Lognormal(f_es_e, 1.0, k_mass_e);
+mass_mu   = prod(mass, f_es_mu);
+k_mass_mu = cexpr('exp(f_mass_mu)', f_mass_mu);
+l_mass_mu  = Lognormal(f_es_mu, 1.0, k_mass_mu);
+signale     = Voigtian(mass_e, shiftedpeak, sig_width, sigmae);
+signalmu    = Voigtian(mass_mu, peak, sig_width, sigmamu);
+
+# weak mode model (template)
+#signalmu    = RooHistPdf(mass, d_wm_1000);
+
+# extended S+B likelihood, single channel
+sume_core   = SUM(norm_ee*signale, n_bkg_ee*bckg);
+summu_core  = SUM(norm_mumu*signalmu, n_bkg_mumu*bckgmu);
+
+# multiply associated likelihoods
+
+# eff*acc scale
+k_eff_scale_ee     = cexpr('exp(f_eff_scale_ee)', f_eff_scale_ee);
+ll_eff_scale_ee    = Lognormal(eff_scale_ee, eff_scale0_ee, k_eff_scale_ee);
+k_eff_scale_mumu   = cexpr('exp(f_eff_scale_mumu)', f_eff_scale_mumu);
+ll_eff_scale_mumu  = Lognormal(eff_scale_mumu, 1.0, k_eff_scale_mumu);
+
+# resolution scale
+#k_res_scale_ee    = cexpr('exp(f_res_scale_ee)', f_res_scale_ee);
+#ll_res_scale_ee   = Lognormal(res_scale_ee, 1.0, k_res_scale_ee);
+#k_res_scale_mumu  = cexpr('exp(f_res_scale_mumu)', f_res_scale_mumu);
+#ll_res_scale_mumu = Lognormal(res_scale_mumu, 1.0, k_res_scale_mumu);
+
+# core
+#sume  = PROD(sume_core,  ll_eff_scale_ee);
+#summu = PROD(summu_core, ll_eff_scale_mumu);
+
+# nominal
+sume  = PROD(sume_core,  ll_eff_scale_ee, l_mass_e);
+summu = PROD(summu_core, ll_eff_scale_mumu);
+
+# combined likelihood
+simpdf      = SIMUL(sample, e=sume, mu=summu);
+
+#--------> Priors -------------------------------------------------------
+#
+# parameter of interest
+#prior_poi           = Uniform(xsec);
+prior_poi            = Uniform(ratio);
+
+# background yield (lognormal)
+k_n_bkg_ee           = cexpr('exp(f_n_bkg_ee*n_bkg_ee)', f_n_bkg_ee, n_bkg_ee);
+prior_n_bkg_ee       = Lognormal(n_bkg_ee, n_bkg_ee0, k_n_bkg_ee);
+k_n_bkg_mumu         = cexpr('exp(f_n_bkg_mumu*n_bkg_mumu)', f_n_bkg_mumu, n_bkg_mumu);
+prior_n_bkg_mumu     = Lognormal(n_bkg_mumu, n_bkg_mumu0, k_n_bkg_mumu);
+
+# eff*acc scale
+prior_eff_scale_ee   = Uniform(eff_scale_ee);
+prior_eff_scale_mumu = Uniform(eff_scale_mumu);
+
+# resolution scale
+#prior_res_scale_ee   = Uniform(res_scale_ee);
+#prior_res_scale_mumu = Uniform(res_scale_mumu);
+
+# mass scale
+prior_es_e   = Uniform(f_es_e);
+prior_es_mu  = Uniform(f_es_mu);
+
+# full prior PDF, POI and nuisance parameters together
+
+# nominal
+prior_pdf    = PROD(prior_poi, prior_n_bkg_ee, prior_n_bkg_mumu, prior_eff_scale_ee, prior_eff_scale_mumu, prior_es_e);
+prior_pdf_e  = PROD(prior_poi, prior_n_bkg_ee, prior_eff_scale_ee, prior_es_e);
+prior_pdf_mu = PROD(prior_poi, prior_n_bkg_mumu, prior_eff_scale_mumu);
+
+# no energy scale
+prior_pdf_4   = PROD(prior_poi, prior_n_bkg_ee, prior_n_bkg_mumu, prior_eff_scale_ee, prior_eff_scale_mumu);
+prior_pdf_4e  = PROD(prior_poi, prior_n_bkg_ee, prior_eff_scale_ee);
+prior_pdf_4mu = PROD(prior_poi, prior_n_bkg_mumu, prior_eff_scale_mumu);
+
+# with energy scale
+prior_pdf_3   = PROD(prior_poi, prior_n_bkg_ee, prior_n_bkg_mumu, prior_eff_scale_ee, prior_eff_scale_mumu, prior_es_e, prior_es_mu);
+prior_pdf_3e  = PROD(prior_poi, prior_n_bkg_ee, prior_eff_scale_ee, prior_es_e);
+prior_pdf_3mu = PROD(prior_poi, prior_n_bkg_mumu, prior_eff_scale_mumu, prior_es_mu);
+
+
+
+
+#------------------------------------------------------------------------
+[Model Config]
+name = zprimeMC
+
+#model = simpdf
+model = sume
+#model = summu
+
+poi = poi_set
+
+#nuisance_parameters = nuis_set
+nuisance_parameters = nuis_set_e
+#nuisance_parameters = nuis_set_mu
+
+#prior = prior_pdf
+prior = prior_pdf_e
+#prior = prior_pdf_mu
+
+
+
+#------------------------------------------------------------------------
+[MCMC Calculator]
+action_name             = mcmc
+model_config            = zprimeMC
+#data                    = combdata
+data                    = data_ee
+#data                    = data_mumu
+ph_cache_size           = 100
+confidence_level        = 0.95
+left_side_tail_fraction = 0.0
+burn_in_steps           = 100
+n_bins                  = 1000
+number_of_iterations    = 20000
+make_posterior_plot     = True
+

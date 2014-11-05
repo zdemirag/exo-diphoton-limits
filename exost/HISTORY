@@ -1,0 +1,68 @@
+00.01.13
+ - updated setup scripts for standalone, CMSSW,
+   cmslpc standalone, lxplus standalone
+ - added standard bayesian MCMC interval routine (root/cms_stat_001.C)
+   and a test macro for it (root/examples/cms_test_001.C)
+
+V00-01-12
+ - added plot format config option to all calculators
+
+ - added Feldman-Cousins calculator
+
+ - added Profile Likelihood calculator
+
+ - BayesianCalculator: model_config option is added, now
+   arbitrary named model configs can be specified
+
+V00-01-11
+ - fixed bug with dataset weights, now weights seem to work
+
+V00-01-10
+ - Workarounds introduced to accomodate CMSSW environment
+
+ - Test case: zprime.cfg updated to do a single channel MCMC limit calculation
+
+ - added an optional 'name' field to the ModelConfig
+   section (defines the name of the Model Config object)
+
+ - fully integrated Markov Chain Monte Carlo interval calculator (MCMC):
+   - Mandatory parameters:
+       action_name = mcmc
+       model_config
+       data
+   - optional parameters:
+       ph_cache_size
+       confidence_level
+       left_side_tail_fraction
+       burn_in_steps
+       number_of_iterations
+       make_posterior_plot
+
+V00-01-09
+ - fixed a configuration bug for CMSSW-based setup on cmslpc
+
+V00-01-08
+ - added python-like syntax for the [Data] section of the config
+
+ - added combine() method to the [Data] section, for combining datasets,
+   this is useful for simultaneous PDFs used for channel combination
+
+ - updated config file examples
+
+ - incorporated environment setup in the application script. User only
+   needds to set ROOTSYS.
+
+ - added two special cases for the environment setup: cmslpc and lxplus
+   The application now recognizes when it is run on these machines
+   and sets up the environment, assuming that CMSSW environment was set
+   by the user
+
+V00-01-07
+ - added exostConfig.is_var_in_ws() to check if
+   a variable is in the workspace
+   (usually this is checked by ws.var()!=None
+   but it doesn't always work, some PyROOT quirk)
+   This was needed for getting weights from input
+
+V00-01-04
+ - added output verbosity flag as command line parameter

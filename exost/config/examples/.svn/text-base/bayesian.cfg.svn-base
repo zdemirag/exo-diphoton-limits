@@ -1,0 +1,32 @@
+[Variables]
+x = x[0,1];
+b = b[1,0,2];
+s = s[0,15];
+n = n[3];
+data_set = set(x,n);
+poi_set = set(s);
+nuis_set = set(b);
+
+
+[Data]
+data = root data "Bayesian example data" ./config/examples/bayesianExampleData.root data_set n
+
+
+[Model]
+model_pdf = SUM(s*Uniform(x),b*Uniform(x));
+prior_poi = Uniform(s);
+prior_nuis = Gaussian(b,1,1);
+prior_pdf = PROD(prior_poi, prior_nuis);
+
+
+[Model Config]
+model = model_pdf
+poi = poi_set
+nuisance_parameters = nuis_set
+prior = prior_pdf
+
+
+[Bayesian Calculator]
+data = data
+confidence_level = 0.90
+posterior_plot = True
