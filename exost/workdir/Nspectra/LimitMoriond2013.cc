@@ -274,8 +274,8 @@ Pixie * myPixie = new Pixie();
 DataPruner * mydatapruner;
 if(datapruning){
 //CONVEBTION: the mass thresholds for at least 400 events rae currently hardcoded -> move to the single channel cfg files
-    double thresh_min_ee_ebeb = 500.;
-    double thresh_min_ee_ebee = 500.;
+    double thresh_min_ee_ebeb = 400.;
+    double thresh_min_ee_ebee = 400.;
     double thresh_min_mm = 550.;
    double thresh_min = 20000. ;
    if(run_channel_dielectron_ebeb && run_channel_dielectron_ebee && run_channel_dimuon ){ thresh_min = std::min(thresh_min_ee_ebeb, std::min(thresh_min_ee_ebee, thresh_min_mm) ) ;}

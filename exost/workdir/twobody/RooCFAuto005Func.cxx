@@ -21,12 +21,14 @@ ClassImp(RooCFAuto005Func)
                         RooAbsReal& _nbkg_kappa_m,
                         RooAbsReal& _mass,
                         RooAbsReal& _nbkg_kappa_msquared,
+                        RooAbsReal& _nbkg_kappa_mcubed,
                         RooAbsReal& _beta_nbkg) :
    RooAbsReal(name,title), 
    nbkg_kappa_b("nbkg_kappa_b","nbkg_kappa_b",this,_nbkg_kappa_b),
    nbkg_kappa_m("nbkg_kappa_m","nbkg_kappa_m",this,_nbkg_kappa_m),
    mass("mass","mass",this,_mass),
    nbkg_kappa_msquared("nbkg_kappa_msquared","nbkg_kappa_msquared",this,_nbkg_kappa_msquared),
+   nbkg_kappa_mcubed("nbkg_kappa_mcubed","nbkg_kappa_mcubed",this,_nbkg_kappa_mcubed),
    beta_nbkg("beta_nbkg","beta_nbkg",this,_beta_nbkg)
  { 
  } 
@@ -38,6 +40,7 @@ ClassImp(RooCFAuto005Func)
    nbkg_kappa_m("nbkg_kappa_m",this,other.nbkg_kappa_m),
    mass("mass",this,other.mass),
    nbkg_kappa_msquared("nbkg_kappa_msquared",this,other.nbkg_kappa_msquared),
+   nbkg_kappa_mcubed("nbkg_kappa_mcubed",this,other.nbkg_kappa_mcubed),
    beta_nbkg("beta_nbkg",this,other.beta_nbkg)
  { 
  } 
@@ -47,7 +50,7 @@ ClassImp(RooCFAuto005Func)
  Double_t RooCFAuto005Func::evaluate() const 
  { 
    // ENTER EXPRESSION IN TERMS OF VARIABLE ARGUMENTS HERE 
-   return pow(nbkg_kappa_b+nbkg_kappa_m*mass+nbkg_kappa_msquared*mass*mass,beta_nbkg) ; 
+   return pow(nbkg_kappa_b+nbkg_kappa_m*mass-nbkg_kappa_msquared*mass*mass+nbkg_kappa_mcubed*mass*mass*mass,beta_nbkg) ; 
  } 
 
 

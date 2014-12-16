@@ -239,12 +239,12 @@ void Pixie::SetResolution_ZPSI(RooWorkspace * ws, std::vector<std::string> chann
    //p1 = 0.000128;//0.006;
 
    //c=005
-   p0 = 0.02187;
-   p1 = 0.003549; 
+   //p0 = 0.02187;
+   //p1 = 0.003549; 
 
    //c=01
-   //p0 = 0.375;
-   //p1 = 0.01402;
+   p0 = 0.375;
+   p1 = 0.01402;
 
    std::string p0name = "width_p0"; //Comment: unfortunately hardcoded
    //p0name += "_";
